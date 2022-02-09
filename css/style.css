@@ -366,6 +366,7 @@ figure img {
     align-items: center;
     background: #E9D7D3;
     padding: 3rem 1rem;
+    padding-bottom: 0;
 }
 
 .banner__container img {
