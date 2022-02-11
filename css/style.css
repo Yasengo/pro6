@@ -68,7 +68,10 @@ img {
     max-width: 112rem;
     margin: 0 auto;
 }
-
+.section_p2{
+    max-width: 98rem;
+    margin: 0 auto;
+}
 /* header */
 
 .header {
@@ -106,8 +109,10 @@ img {
     transition: .2s ease-in;
 }
 
-.navigation__bar a:hover {
+.navigation__bar a:hover,
+.navigation__bar a.active{
     color: var(--primarycolor);
+    
 }
 
 .navigation__left {
@@ -445,7 +450,7 @@ footer{
     /* width: 100%; */
     max-width: 99.5rem;
     margin: 0 auto ;
-    padding: 3rem 1rem;
+    padding: 3rem 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
    
@@ -477,6 +482,139 @@ footer{
     margin-right: .5rem;
     color: #ffffff;
 }
+
+/* shop */
+
+.shop{
+    width: 100%;
+    /* height: 40vh; */
+    background: #333333;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    padding: 10rem 2rem;
+}
+.shop p{
+    color: #fff;
+}
+.shop h4{
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.product{
+    width: 100%;
+}
+.pro__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 1rem;
+}
+.pro__top h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.pro__top select{
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    padding: .8rem .5rem;
+}
+.pro__top select option{
+    text-transform: capitalize;
+}
+.pro__bot{
+    padding-top: 0;
+}
+
+.aboutus{
+    width: 100%;
+    padding: 4rem 2rem;
+}
+.aboutus__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* gap: .5rem; */
+    
+}
+ .aboutus_col{
+    flex: 0 1 49%;
+}
+.aboutus_col h2{
+    /* padding: 1rem 0; */
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.aboutus_col p{
+    word-wrap: break-word;
+}
+.aboutus_col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map iframe{
+    width: 100%;
+    padding: 2rem 0;
+}
+.f_contact{
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1.2fr;
+    padding: 3rem 2rem;
+}
+.con_right input,
+.con_right textarea{
+    width: 100%;
+    /* margin: .5rem 0; */
+    padding: 1rem .5rem;
+    outline: none;
+    border:none;
+    border-left: .2rem solid #333;
+    border-bottom: .2rem solid #333;
+}
+.con_right textarea{
+    resize: none;
+}
+.con_right form{
+    width: 100%;
+}
+.con_right form a{
+    /* display: inline-block; */
+    margin-top:1rem ;
+    border-radius: 0;
+}
+
+.con_left .s_col h4{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    
+}
+.con_left .s_col{
+    margin-bottom: 1rem;
+}
+
+.con_left .s_col span{
+    font-size: 1.4rem;
+    color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -559,7 +697,6 @@ footer{
     .accesso__container {
         grid-template-columns: 1fr;
         padding: 0 3rem;
-
     }
 
     .accesso_col {
@@ -584,6 +721,13 @@ footer{
     .banner-t_coll {
         width: 100%;
         margin-top: 3rem;
+    }
+    .aboutus__container{
+        flex-direction: column-reverse;
+    }
+    .f_contact{
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
 }
